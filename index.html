@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bad+Script&family=Pangolin&family=Rock+Salt&display=swap" rel="stylesheet"> 
+		<title>Desafio Imersão Dev Alura - Aula 01</title>
+	</head>
+
+	<body>
+		<section class="cabecario">
+			<h1 class="titulo__pagina">
+				Boletim
+				<img
+					src="https://www.alura.com.br/assets/img/imersoes/dev-2021/logo-imersao-conversor-de-moedas.svg"
+					class="titulo__imagem" alt="Logo da Imersão Dev"/>
+			</h1>
+
+			<h2 class="subtitulo__texto">
+				Descubra qual a sua média de nota de todas as provas!
+			</h2>
+			
+			<a href="https://alura.com.br/" target="_blank">
+				<img src="https://www.alura.com.br/assets/img/home/alura-logo.svg" alt="" class="alura-logo">
+				</a>
+		</section>
+
+		<section class="formulario">
+			<div class="formulario__input">
+				<form>
+					<p class="formulario__campo">
+						<label for="nome" class="formulario__nome">Insira seu nome:</label><br />
+						<input type="text" name="nome" id="nome" class="formulario__info" />
+					</p>
+
+					<p class="formulario__campo">
+						<label for="grade1">Nota do Primeiro Semestre:</label><br />
+						<input type="text" name="grade1" id="grade1" class="formulario__info" />
+					</p>
+
+					<p class="formulario__campo">
+						<label for="grade2">Nota do Segundo Semestre:</label> <br />
+						<input type="text" name="grade2" id="grade2" class="formulario__info"/>
+					</p>
+
+					<p class="formulario__campo">
+						<label for="grade3">Nota do Terceiro Semestre:</label><br />
+						<input type="text" name="grade3"	id="grade3"	class="formulario__info"/>
+					</p>
+
+					<p class="formulario__campo">
+						<label for="grade4">Nota do Quarto Semestre:</label><br />
+						<input type="text" name="grade4" id="grade4" class="formulario__info"/>
+					</p>
+
+					<button type="submit" id="calcular" class="formulario__botao">
+						Calcular
+					</button>
+
+				</form>
+			</div>
+
+			<div class="formulario__imagem"></div>
+			
+      <div class="formulario__resultado" id="resultado"></div>
+		</section>
+
+		<script src="main.js"></script>
+	</body>
+</html>

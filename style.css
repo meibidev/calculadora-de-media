@@ -1,0 +1,113 @@
+:root {
+  --preto-fundo: #171717;
+  --branco-principal: #ffffff;
+  --amrelo-principal: #F2CB07;
+  --amarelo-escuro: #F2A922;
+  --fonte-principal: 'Bad Script';
+  --fonte-titulo: 'Rock Salt';
+  --fonte-formulario: 'Pangolin';
+}
+
+body {
+  background-color: var(--preto-fundo);
+  font-family: var(--fonte-principal);
+  color: var(--branco-principal);
+  display: flexbox;
+  justify-content: center;
+}
+
+.cabecario {
+  text-align: center;
+}
+
+.titulo__pagina {
+  font-family: var(--fonte-titulo);
+  font-size: 30px;
+  text-transform: uppercase;
+}
+
+.titulo__imagem {
+  width: 200px;
+}
+
+.subtitulo__texto {
+  font-size: 25px;
+}
+
+.formulario {
+  display: grid;
+  grid-template-columns: 15% auto 1%;
+  grid-template-rows: auto auto;
+  justify-content: center;
+  width: 100%;
+}
+
+.formulario__input {
+  grid-area: 2;
+  text-align: left;
+  border: 3px solid var(--amrelo-principal);
+  border-radius: 0 2% 2% 0;
+  grid-column-start: 2;
+  grid-row-start: 1;
+}
+
+.formulario__nome {
+  font-size: 30px;
+  text-transform: none;
+}
+
+.formulario__campo {
+  font-family: var(--fonte-formulario);
+  font-size: 25px;
+  text-transform: lowercase;
+  padding-left: 1em;
+  padding-right: 2em;
+
+}
+
+.formulario__info {
+  border-style: none;
+  border-radius: 2%;
+  padding: 2%;
+}
+
+.formulario__botao {
+  border-style: none;
+  color: var(--preto-fundo);
+  background-color: var(--amrelo-principal);
+  font-family: var(--fonte-formulario);
+  font-size: 50px;
+  text-transform: uppercase;
+  padding: 5%;
+  width: 100%;
+}
+
+.formulario__botao:hover {
+  background-color: var(--amarelo-escuro);
+}
+
+.formulario__resultado {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 2;
+  text-align: center;
+  font-size: 30px;
+}
+
+.formulario__imagem {
+  background-image: url(https://images.unsplash.com/photo-1558365916-848463c5d803?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1936&q=80);
+  background-repeat: no-repeat;
+  background-size: 200%;
+  background-position-x: center; 
+  border-radius: 10px 0 0 10px;
+  border: 1% solid transparent;
+ 
+
+}
+
+.alura-logo {
+  width: 40px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
